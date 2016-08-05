@@ -1,0 +1,23 @@
+.font-box {
+    border: 1px solid $light-grey;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.font-display {
+    font-size: 8em;
+    color: black;
+    text-align: center;
+}
+
+.font-box span {
+    display: block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.20);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.font-sample {
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 2em;
+}
