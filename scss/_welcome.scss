@@ -22,13 +22,15 @@
     margin: auto;
 }
 
-.welcome-page .button-row {
+.button-row {
     max-width: 600px;
-    margin: auto;
-    padding-top: 20px
-}
-
-
-.welcome-page .button-row .btn {
-    width: 150px;
+    margin: 20px auto 0;
+    display: flex;
+    .button-single {
+        flex: 1;
+        margin: 0 3px;
+        .btn {
+            width: 100%;
+        }
+    }
 }
