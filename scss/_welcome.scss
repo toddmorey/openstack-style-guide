@@ -1,0 +1,34 @@
+.welcome-page {
+    background-color: rgb(228, 0, 57);
+}
+
+.welcome-page h1 {
+    text-align: center;
+    color: white;
+    font-size: 10em;
+    border-bottom: none;
+}
+
+.welcome-page p {
+    border-top: 1px solid#9B002C;
+    border-bottom: 1px solid#9B002C;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    opacity: 0.9;
+    line-height: 2em;
+    font-size: 1.4em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.welcome-page .button-row {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px
+}
+
+
+.welcome-page .button-row .btn {
+    width: 150px;
+}

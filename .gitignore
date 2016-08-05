@@ -6,3 +6,4 @@ build/*
 netlify-config.js
 
 bower_components/*
+content/css/*
