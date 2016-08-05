@@ -23,3 +23,17 @@ menu: permitted use
 	<li>Recolor the logo</li>
 	<li>Modify the logo to stand for another program or entity (e.g. to stand for a project, program, or group)</li>
 </ul>
+
+<hr/>
+
+<div class="row">
+	<div class="col-md-4">
+		<img src="/images/logo-in-use/OS_Logo_Interior_03.jpg" width="100%" />
+	</div>
+	<div class="col-md-4">
+		<img src="/images/logo-in-use/OS_Logo_Interior_02.jpg" width="100%" />
+	</div>
+	<div class="col-md-4">
+		<img src="/images/logo-in-use/OS_Logo_Tshirt.jpg" width="100%" />
+	</div>	
+</div>
