@@ -101,7 +101,7 @@ gulp.task('watch', function () {
 });
 
 // Deploy site to netlify
-gulp.task('deploy', ['build-site'], function() {
+gulp.task('deploy', function() {
   netlify.deploy({
     access_token: config.NETLIFY_ACCESS_TOKEN,
     site_id: config.NETLIFY_SITE_ID,
