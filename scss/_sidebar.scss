@@ -53,6 +53,9 @@ img.main-logo-small {
 //   display: none;
 // }
 @media (min-width: 768px) {
+  .navbar {
+    display: none;  
+  }
   .sidebar {
     position: fixed;
     top: 0px;
