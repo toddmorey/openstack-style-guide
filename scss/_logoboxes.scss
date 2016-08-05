@@ -1,0 +1,20 @@
+.logo-box {
+    border: 1px solid $light-grey
+}
+
+.logo-box img {
+    padding: 30px;
+    width: 100%;
+}
+
+.logo-box span {
+    display: block;
+    background-color: $light-grey;
+    padding: 5px;
+    color:#999999;
+    text-align: center;
+}
+
+.logo-box-reversed {
+    background-color: rgb(228, 0, 53)
+}

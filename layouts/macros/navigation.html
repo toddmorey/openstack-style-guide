@@ -1,0 +1,20 @@
+{% macro active(menuLink='home') %}
+<nav class="navbar navbar-inverse navbar-static-top">
+  <img src="/images/svg-logos/openstack-logomark-only.svg"/>
+  <a class="navbar-brand" href="/">k</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item {%if menuLink == 'home' %}active{% endif %}">
+      <a class="nav-link" href="/">Homes</a>
+    </li>
+    <li class="nav-item {%if menuLink == 'research' %}active{% endif %}">
+      <a class="nav-link" href="/research/">Research</a>
+    </li>
+    <li class="nav-item {%if menuLink == 'research' %}active{% endif %}">
+      <a class="nav-link" href="/design/">Design</a>
+    </li>
+    <li class="nav-item {%if menuLink == 'engineering' %}active{% endif %}">
+      <a class="nav-link" href="/design/">Engineering</a>
+    </li>
+  </ul>
+</nav>
+{% endmacro %}

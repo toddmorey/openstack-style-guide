@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>The OpenStack Style Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link href="/css/combined.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <img src="/images/svg-logos/openstack-logomark-only.svg"/>
+          <ul class="nav nav-sidebar">
+            <li class="{%if menu == 'welcome' %}active{% endif %}"><a href="/">Welcome <span class="sr-only">(current)</span></a></li>
+            <li class="{%if menu == 'logos' %}active{% endif %}"><a href="/logos/">Logos</a></li>
+            <li class="{%if menu == 'permitted use' %}active{% endif %}"><a href="/permitted-logo-use/">Permitted Logo Usage</a></li>
+            <li class="{%if menu == 'other logos' %}active{% endif %}"><a href="/other-logos/">Other OpenStack logos</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class="{%if menu == 'colors' %}active{% endif %}"><a href="/colors/">Colors</a></li>
+            <li class="{%if menu == 'fonts' %}active{% endif %}"><a href="/fonts/">Fonts</a></li>
+            <li class="{%if menu == 'iconography' %}active{% endif %}"><a href="/iconography/">Iconography</a></li>
+            <li class="{%if menu == 'illustrations' %}active{% endif %}"><a href="/illustration/">Illustration</a></li>
+            <li class="{%if menu == 'photograpy' %}active{% endif %}"><a href="/photography/">Photography</a></li>
+            <li class="{%if menu == 'charts' %}active{% endif %}"><a href="/charts-and-diagrams/">Charts &amp; Diagrams</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">            
+            <li class="{%if menu == 'websites' %}active{% endif %}"><a href="/websites/">Websites</a></li>            
+            <li class="{%if menu == 'UI' %}active{% endif %}"><a href="/ui-components/">UI Components</a></li>
+            <li class="{%if menu == 'print templates' %}active{% endif %}"><a href="/print/">Print Templates</a></li>
+            <li class="{%if menu == 'sliders' %}active{% endif %}"><a href="/slides/">Slide Templates</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">            
+            <li class="{%if menu == 'about' %}active{% endif %}"><a href="/about/">About OpenStack</a></li>
+            <li class="{%if menu == 'tone' %}active{% endif %}"><a href="/tone-of-voice/">Tone of voice</a></li>
+            <li class="{%if menu == 'written style' %}active{% endif %}"><a href="/written-style-guide/">Written Style Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">{{ title }}</h1>
+          {{ contents | safe }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

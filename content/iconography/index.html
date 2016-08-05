@@ -1,0 +1,11 @@
+---
+title: Iconography
+layout: styleguide.html
+menu: iconography
+permalink: false
+---
+
+<ul class="bs-glyphicons bs-glyphicons-list">
+{% for image in images %}
+    <li><img src='../{{ image }}'/></li>
+{% endfor %}

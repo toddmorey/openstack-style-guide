@@ -1,0 +1,38 @@
+.color-box {
+    border: 1px solid $light-grey;
+}
+
+.color-box img {
+    padding: 30px;
+    width: 100%;
+}
+
+.color-box span {
+    margin-top: 70px;
+    display: block;
+    padding: 5px;
+    color:rgba(255, 255, 255, 0.50);
+    background-color: rgba(0, 0, 0, 0.20);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.color-box-red {
+    background-color: rgb(201, 25, 45)
+}
+
+.color-box-blue {
+    background-color: rgb(37, 110, 165)
+}
+
+.color-box-purple {
+    background-color: rgb(168, 37, 114)
+}
+
+.color-box-orange {
+    background-color: rgb(218, 104, 35)
+}
+
+.color-box-green {
+    background-color: rgb(88, 169, 53)
+}

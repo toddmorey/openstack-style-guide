@@ -1,0 +1,15 @@
+{% macro img(path,options) %}
+  {% if path and options.width %}
+      {% if site.production %}
+        <img src="http://res.cloudinary.com/urbantonio/image/fetch/w_{{options.width}},c_fit/{{path}}"/>
+      {% else %}
+        <img src="{{path}}" width="{{options.width}}px"/>
+      {% endif %}
+  {% endif %}
+{% endmacro %}
+
+{% macro src(path,options) %}
+  {% if path and options.width %}
+      http://res.cloudinary.com/urbantonio/image/fetch/w_{{options.width}},c_fit/{{path}}
+  {% endif %}
+{% endmacro %}
