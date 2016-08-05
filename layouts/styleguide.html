@@ -28,37 +28,49 @@
   </head>
 
   <body class="{%if menu == 'welcome' %}welcome-page{% endif %}">
-
+    <!-- top navbar -->
+    <div class="navbar" role="navigation">
+       <div class="container">
+      <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <img class="main-logo-small" src="/images/svg-logos/openstack-logomark-only-small.svg"/>
+      </div>
+       </div>
+    </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <img src="/images/svg-logos/openstack-logomark-only.svg"/>
-          <ul class="nav nav-sidebar">
-            <li class="{%if menu == 'welcome' %}active{% endif %}"><a href="/">Welcome <span class="sr-only">(current)</span></a></li>
-            <li class="{%if menu == 'logos' %}active{% endif %}"><a href="/logos/">Logos</a></li>
-            <li class="{%if menu == 'permitted use' %}active{% endif %}"><a href="/permitted-logo-use/">Permitted Logo Usage</a></li>
-            <li class="{%if menu == 'other logos' %}active{% endif %}"><a href="/other-logos/">Other OpenStack logos</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li class="{%if menu == 'colors' %}active{% endif %}"><a href="/colors/">Colors</a></li>
-            <li class="{%if menu == 'fonts' %}active{% endif %}"><a href="/fonts/">Fonts</a></li>
-            <li class="{%if menu == 'iconography' %}active{% endif %}"><a href="/iconography/">Iconography</a></li>
-            <li class="{%if menu == 'illustrations' %}active{% endif %}"><a href="/illustration/">Illustration</a></li>
-            <li class="{%if menu == 'photograpy' %}active{% endif %}"><a href="/photography/">Photography</a></li>
-            <li class="{%if menu == 'charts' %}active{% endif %}"><a href="/charts-and-diagrams/">Charts &amp; Diagrams</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">            
-            <li class="{%if menu == 'websites' %}active{% endif %}"><a href="/websites/">Websites</a></li>            
-            <li class="{%if menu == 'UI' %}active{% endif %}"><a href="/ui-components/">UI Components</a></li>
-            <li class="{%if menu == 'print templates' %}active{% endif %}"><a href="/print/">Print Templates</a></li>
-            <li class="{%if menu == 'sliders' %}active{% endif %}"><a href="/slides/">Slide Templates</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">            
-            <li class="{%if menu == 'about' %}active{% endif %}"><a href="/about/">About OpenStack</a></li>
-            <li class="{%if menu == 'tone' %}active{% endif %}"><a href="/tone-of-voice/">Tone of voice</a></li>
-            <li class="{%if menu == 'written style' %}active{% endif %}"><a href="/written-style-guide/">Written Style Guide</a></li>
-          </ul>
-        </div>
+          <div class="col-sm-3 col-md-2 sidebar">
+            <img class="main-logo" src="/images/svg-logos/openstack-logomark-only.svg"/>
+            <ul class="nav nav-sidebar">
+              <li class="{%if menu == 'welcome' %}active{% endif %}"><a href="/">Welcome <span class="sr-only">(current)</span></a></li>
+              <li class="{%if menu == 'logos' %}active{% endif %}"><a href="/logos/">Logos</a></li>
+              <li class="{%if menu == 'permitted use' %}active{% endif %}"><a href="/permitted-logo-use/">Permitted Logo Usage</a></li>
+              <li class="{%if menu == 'other logos' %}active{% endif %}"><a href="/other-logos/">Other OpenStack logos</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+              <li class="{%if menu == 'colors' %}active{% endif %}"><a href="/colors/">Colors</a></li>
+              <li class="{%if menu == 'fonts' %}active{% endif %}"><a href="/fonts/">Fonts</a></li>
+              <li class="{%if menu == 'iconography' %}active{% endif %}"><a href="/iconography/">Iconography</a></li>
+              <li class="{%if menu == 'illustrations' %}active{% endif %}"><a href="/illustration/">Illustration</a></li>
+              <li class="{%if menu == 'photograpy' %}active{% endif %}"><a href="/photography/">Photography</a></li>
+              <li class="{%if menu == 'charts' %}active{% endif %}"><a href="/charts-and-diagrams/">Charts &amp; Diagrams</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">            
+              <li class="{%if menu == 'websites' %}active{% endif %}"><a href="/websites/">Websites</a></li>            
+              <li class="{%if menu == 'UI' %}active{% endif %}"><a href="/ui-components/">UI Components</a></li>
+              <li class="{%if menu == 'print templates' %}active{% endif %}"><a href="/print/">Print Templates</a></li>
+              <li class="{%if menu == 'sliders' %}active{% endif %}"><a href="/slides/">Slide Templates</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">            
+              <li class="{%if menu == 'about' %}active{% endif %}"><a href="/about/">About OpenStack</a></li>
+              <li class="{%if menu == 'tone' %}active{% endif %}"><a href="/tone-of-voice/">Tone of voice</a></li>
+              <li class="{%if menu == 'written style' %}active{% endif %}"><a href="/written-style-guide/">Written Style Guide</a></li>
+            </ul>
+          </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">{{ title }}</h1>
           {{ contents | safe }}
@@ -72,6 +84,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
 
