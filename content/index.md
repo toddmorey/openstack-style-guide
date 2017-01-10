@@ -5,7 +5,7 @@ permalink: false
 menu: welcome
 ---
 
-**We are Openstack.** Our values should be evident wherever OpenStack is encountered, whether online or via traditional marketing material. If we follow these guidelines consistently, the brand will grow strong enough to attract people, encouraging them to look even more positively on the product itself. These guidelines provide everything you need to create professional communication  materials that will build the OpenStack brand. To help ensure the continued success of OpenStack, please use them.
+**This is a DRAFT** and not meant to be shared with the public just yet. OpenStack's updated branding and corresponding assets are a work in process, we're excited about what's to come! Check out what we have so far but please don't share yet. Thanks for your consideration!
 
 <div class="button-row">
 	<div class="button-single">
