@@ -3,7 +3,10 @@ title: Written Style Guide
 layout: styleguide.html
 menu: written style guide
 ---
-
+<p>
+  The purpose of this section is to show content writers how to style industry-specific and OpenStack-specific terms. We use this document for reference when creating marketing collateral, content, campaigns, and website copy.
+</p>
+<p>&nbsp;</p>
 <p class="definition">
   <strong>*aaS (IaaS, FWaaS, SaaS, PaaS, LBaaS)</strong>
   Camelcase, with ""aa"" being lowercase. If written out, hyphenate.
