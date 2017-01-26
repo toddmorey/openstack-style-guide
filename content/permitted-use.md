@@ -27,13 +27,13 @@ menu: permitted use
 <hr/>
 
 <div class="row">
-	<div class="col-md-4">
-		<img src="/images/logo-in-use/OS_Logo_Interior_03.jpg" width="100%" />
+	<div class="col-sm-4">
+		<img src="/images/logo-in-use/OS_Logo_Interior_03.jpg" class="responsive-image" />
 	</div>
-	<div class="col-md-4">
-		<img src="/images/logo-in-use/OS_Logo_Interior_02.jpg" width="100%" />
+	<div class="col-sm-4">
+		<img src="/images/logo-in-use/OS_Logo_Interior_02.jpg" class="responsive-image" />
 	</div>
-	<div class="col-md-4">
-		<img src="/images/logo-in-use/OS_Logo_Tshirt.jpg" width="100%" />
+	<div class="col-sm-4">
+		<img src="/images/logo-in-use/OS_Logo_Tshirt.jpg" class="responsive-image" />
 	</div>	
 </div>
