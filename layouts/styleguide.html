@@ -62,25 +62,41 @@
               <li class="{%if menu == 'colors' %}active{% endif %}"><a href="/colors/">Colors</a></li>
               <li class="{%if menu == 'fonts' %}active{% endif %}"><a href="/fonts/">Fonts</a></li>
               <li class="{%if menu == 'iconography' %}active{% endif %}"><a href="/iconography/">Iconography</a></li>
-              <li class="{%if menu == 'illustrations' %}active{% endif %}"><a href="/illustration/">Illustration</a></li>
-              <li class="{%if menu == 'photograpy' %}active{% endif %}"><a href="/photography/">Photography</a></li>
-              <li class="{%if menu == 'charts' %}active{% endif %}"><a href="/charts-and-diagrams/">Charts &amp; Diagrams</a></li>
+              <li class="{%if menu == 'illustration' %}active{% endif %}"><a href="/illustration/">Illustration</a></li>
+              <li class="{%if menu == 'photography' %}active{% endif %}"><a href="/photography/">Photography</a></li>
+              <li class="{%if menu == 'charts and diagrams' %}active{% endif %}"><a href="/charts-and-diagrams/">Charts &amp; Diagrams</a></li>
             </ul>
             <ul class="nav nav-sidebar">            
               <li class="{%if menu == 'websites' %}active{% endif %}"><a href="/websites/">Websites</a></li>            
-              <li class="{%if menu == 'UI' %}active{% endif %}"><a href="/ui-components/">UI Components</a></li>
+              <li class="{%if menu == 'ui components' %}active{% endif %}"><a href="/ui-components/">UI Components</a></li>
               <li class="{%if menu == 'print templates' %}active{% endif %}"><a href="/print/">Print Templates</a></li>
-              <li class="{%if menu == 'sliders' %}active{% endif %}"><a href="/slides/">Slide Templates</a></li>
+              <li class="{%if menu == 'slide templates' %}active{% endif %}"><a href="/slides/">Slide Templates</a></li>
             </ul>
             <ul class="nav nav-sidebar">            
-              <li class="{%if menu == 'about' %}active{% endif %}"><a href="/about/">About OpenStack</a></li>
+              <li class="{%if menu == 'about openstack' %}active{% endif %}"><a href="/about/">About OpenStack</a></li>
               <li class="{%if menu == 'tone' %}active{% endif %}"><a href="/tone-of-voice/">Tone of voice</a></li>
-              <li class="{%if menu == 'written style' %}active{% endif %}"><a href="/written-style-guide/">Written Style Guide</a></li>
+              <li class="{%if menu == 'written style guide' %}active{% endif %}"><a href="/written-style-guide/">Written Style Guide</a></li>
             </ul>
           </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">{{ title }}</h1>
           {{ contents | safe }}
+          {%if menu != 'welcome' %}
+            <div class="row">
+              <div class="col-sm-8 col-sm-push-2 comments">
+                <div id="disqus_thread"></div>
+                <script>
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = '//os-styleguide.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
